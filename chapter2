@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kapitel 2: Warum passives Investieren?</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Kapitel 2: Warum passives Investieren?</h1>
+    <div class="box">
+        <p>Passive Investitionen wachsen mit der Zeit. Stell dir vor, du hast einen kleinen Tropf, der stetig Gold in deine Schatztruhe fließen lässt – ohne dass du groß eingreifen musst. Die Magie liegt in der Zeit und der Macht des Zinseszinses, die deine Schätze wachsen lässt.</p>
+    </div>
+    <a href="chapter3.html">Weiter zu Kapitel 3</a>
+</body>
+</html>
