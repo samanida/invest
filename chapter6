@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kapitel 7: Nützliche Ressourcen</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Kapitel 7: Nützliche Ressourcen</h1>
+    <div class="box">
+        <p>Hier findest du nützliche Links und Ressourcen, um tiefer in die Welt des passiven Investierens einzutauchen. Lass dich von Experten führen und lerne aus bewährten Quellen.</p>
+        <div class="qr-code">
+            <!-- Beispiel QR-Code. Lade hier die echten QR-Codes für deine Links hoch -->
+            <img src="https://via.placeholder.com/120" alt="QR-Code zu Ressourcen">
+        </div>
+    </div>
+    <a href="index.html">Zurück zur Übersicht</a>
+</body>
+</html>
