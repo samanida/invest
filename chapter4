@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kapitel 4: Was sind ETFs?</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Kapitel 4: Was sind ETFs?</h1>
+    <div class="box">
+        <p>ETFs, auch bekannt als „Exchange Traded Funds“, sind wie eine magische Schatztruhe, die verschiedene Schätze enthält. Du kannst ein Stück dieser Truhe kaufen und besitzt automatisch einen kleinen Teil von allem, was darin enthalten ist. Sie folgen einem Index, der die Leistung vieler Muggel-Unternehmen bündelt.</p>
+    </div>
+    <a href="chapter5.html">Weiter zu Kapitel 5</a>
+</body>
+</html>
