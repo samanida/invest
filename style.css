@@ -1,114 +1,57 @@
 /* Allgemeines Styling */
-body {
+body, html {
     font-family: "Garamond", serif;
     background-color: #f4f1e8;
     color: #4a2f1d;
     margin: 0;
     padding: 0;
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     min-height: 100vh;
-    background-image: url('https://www.transparenttextures.com/patterns/old-map.png'); /* Pergament-Textur */
 }
 
-h1, h2 {
-    font-family: "Georgia", serif;
-    color: #3b1e1a;
+/* Hauptinhalt in der Mitte zentrieren */
+.content {
     text-align: center;
-    margin: 20px 0;
-    letter-spacing: 2px;
-    text-shadow: 1px 1px #d4af37;
+    max-width: 90%;
+    margin: 20px auto;
 }
 
 h1 {
+    font-family: "Georgia", serif;
+    color: #3b1e1a;
+    margin: 20px 0;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px #d4af37;
     font-size: 2em;
 }
 
-h2 {
-    font-size: 1.5em;
-}
-
-p {
-    font-size: 1.1em;
-    text-align: center;
-    max-width: 600px;
-    padding: 0 10px;
-}
-
-/* Links im Hogwarts-Stil */
-a {
-    color: #3b1e1a;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 8px 12px;
-    border-radius: 5px;
-    background-color: #e2d3ba;
-    border: 1px solid #b08934;
-    transition: all 0.3s;
-    display: inline-block;
-    margin: 10px;
-}
-
-a:hover {
-    background-color: #b08934;
-    color: #f4f1e8;
-}
-
-/* Styles für Index-Navigation */
+/* Navigation */
 nav ul {
     list-style-type: none;
     padding: 0;
-    text-align: center;
-    margin-top: 20px;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
-nav ul li {
-    margin: 15px 0;
-}
-
+/* Kapitel-Links */
 nav ul li a {
     font-weight: bold;
     color: #3b1e1a;
     padding: 10px 15px;
-    display: inline-block;
-    width: 80%;
     background-color: #e2d3ba;
     border: 2px solid #b08934;
     border-radius: 8px;
     text-decoration: none;
     transition: all 0.3s;
+    display: block;
 }
 
 nav ul li a:hover {
     background-color: #b08934;
     color: #f4f1e8;
     border-color: #3b1e1a;
-}
-
-
-/* Kapitelbox */
-.box {
-    background-color: rgba(255, 248, 220, 0.9);
-    padding: 20px;
-    border: 2px solid #b08934;
-    border-radius: 8px;
-    max-width: 600px;
-    text-align: center;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-}
-
-/* QR-Code-Bereich */
-.qr-code {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.qr-code img {
-    width: 120px;
-    height: auto;
-    border: 3px solid #b08934;
-    padding: 5px;
-    background-color: #fff;
 }
