@@ -56,16 +56,37 @@ a:hover {
     color: #f4f1e8;
 }
 
-/* Navigationsmenü auf der Startseite */
+/* Styles für Index-Navigation */
 nav ul {
     list-style-type: none;
     padding: 0;
     text-align: center;
+    margin-top: 20px;
 }
 
 nav ul li {
-    margin: 10px 0;
+    margin: 15px 0;
 }
+
+nav ul li a {
+    font-weight: bold;
+    color: #3b1e1a;
+    padding: 10px 15px;
+    display: inline-block;
+    width: 80%;
+    background-color: #e2d3ba;
+    border: 2px solid #b08934;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #b08934;
+    color: #f4f1e8;
+    border-color: #3b1e1a;
+}
+
 
 /* Kapitelbox */
 .box {
