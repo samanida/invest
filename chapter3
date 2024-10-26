@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kapitel 3: Wichtige Konzepte</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Kapitel 3: Wichtige Konzepte</h1>
+    <div class="box">
+        <p>Bevor du auf die Reise gehst, ist es wichtig, ein paar Zaubersprüche – oder besser gesagt, Begriffe – zu kennen. Der „Zinseszins“ und das Konzept der „Diversifikation“ sind mächtige Werkzeuge, die verhindern, dass ein einziger Fluch deine Ersparnisse vernichtet.</p>
+    </div>
+    <a href="chapter4.html">Weiter zu Kapitel 4</a>
+</body>
+</html>
