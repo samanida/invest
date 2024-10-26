@@ -1,60 +1,62 @@
-/* Grundlayout und Farben */
+/* Allgemeines Styling */
 body {
     font-family: "Garamond", serif;
     background-color: #f4f1e8;
     color: #4a2f1d;
-    line-height: 1.6;
     margin: 0;
-    padding: 20px;
-    max-width: 800px;
-    margin: auto;
-    border: 2px solid #4a2f1d;
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
-    padding: 20px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
     background-image: url('https://www.transparenttextures.com/patterns/old-map.png'); /* Pergament-Textur */
 }
 
-/* Überschriften im Hogwarts-Stil */
-h1, h2, h3 {
+h1, h2 {
     font-family: "Georgia", serif;
     color: #3b1e1a;
     text-align: center;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
+    margin: 20px 0;
     letter-spacing: 2px;
+    text-shadow: 1px 1px #d4af37;
 }
 
 h1 {
     font-size: 2em;
-    text-shadow: 2px 2px #d4af37;
 }
 
 h2 {
-    font-size: 1.6em;
-    text-shadow: 1px 1px #b08934;
+    font-size: 1.5em;
 }
 
 p {
     font-size: 1.1em;
-    text-indent: 40px;
+    text-align: center;
+    max-width: 600px;
+    padding: 0 10px;
 }
 
 /* Links im Hogwarts-Stil */
 a {
     color: #3b1e1a;
     text-decoration: none;
-    border-bottom: 2px solid #b08934;
-    padding: 2px;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 5px;
+    background-color: #e2d3ba;
+    border: 1px solid #b08934;
+    transition: all 0.3s;
+    display: inline-block;
+    margin: 10px;
 }
 
 a:hover {
-    color: #b08934;
-    background-color: #3b1e1a;
-    border-bottom: 2px solid #3b1e1a;
-    border-top: 2px solid #b08934;
+    background-color: #b08934;
+    color: #f4f1e8;
 }
 
-/* Navigation */
+/* Navigationsmenü auf der Startseite */
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -62,36 +64,21 @@ nav ul {
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 10px;
+    margin: 10px 0;
 }
 
-nav ul li a {
-    font-weight: bold;
-    color: #3b1e1a;
-    padding: 8px 12px;
-    border-radius: 5px;
-    background-color: #e2d3ba;
-    border: 1px solid #b08934;
-    transition: all 0.2s;
-}
-
-nav ul li a:hover {
-    background-color: #b08934;
-    color: #f4f1e8;
-}
-
-/* Box-Design für das alte Pergament */
+/* Kapitelbox */
 .box {
     background-color: rgba(255, 248, 220, 0.9);
-    padding: 15px;
+    padding: 20px;
     border: 2px solid #b08934;
     border-radius: 8px;
-    margin-top: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    max-width: 600px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* QR-Code-Box */
+/* QR-Code-Bereich */
 .qr-code {
     text-align: center;
     margin-top: 20px;
