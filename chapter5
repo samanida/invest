@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kapitel 5: Wie funktioniert ein ETF?</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Kapitel 5: Wie funktioniert ein ETF?</h1>
+    <div class="box">
+        <p>Ein ETF funktioniert, indem er den Markt widerspiegelt. Stell dir vor, der ETF ist wie ein magischer Spiegel, der dir zeigt, wie es allen im Königreich geht. Wenn die Wirtschaft wächst, spiegelt dies der ETF wider – dein Anteil wächst entsprechend.</p>
+    </div>
+    <a href="chapter6.html">Weiter zu Kapitel 6</a>
+</body>
+</html>
