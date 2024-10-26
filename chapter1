@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Was ist passives Investieren?</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Was ist passives Investieren?</h1>
+    <p>In der Welt der Muggel gibt es viele Arten, sein Gold anzulegen...</p>
+    <a href="chapter2.html">Weiter zu Kapitel 2</a>
+</body>
+</html>
