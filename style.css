@@ -1,57 +1,53 @@
 /* Allgemeines Styling */
 body, html {
-    font-family: "Garamond", serif;
-    background-color: #f4f1e8;
-    color: #4a2f1d;
+    font-family: "Garamond", serif; /* Schriftart für Harry Potter Stil */
+    background-color: #f4f1e8; /* Hintergrundfarbe */
+    color: #4a2f1d; /* Textfarbe */
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+    justify-content: center; /* Zentrierung horizontal */
+    align-items: center; /* Zentrierung vertikal */
+    min-height: 100vh; /* Höhe des Viewports */
 }
 
 /* Hauptinhalt in der Mitte zentrieren */
 .content {
-    text-align: center;
-    max-width: 90%;
-    margin: 20px auto;
+    text-align: center; /* Text zentriert */
+    max-width: 90%; /* Maximale Breite */
+    margin: 20px auto; /* Automatischer Abstand oben und unten */
 }
 
 h1 {
-    font-family: "Georgia", serif;
-    color: #3b1e1a;
-    margin: 20px 0;
-    letter-spacing: 2px;
-    text-shadow: 1px 1px #d4af37;
-    font-size: 2em;
+    font-family: "Georgia", serif; /* Schriftart für den Titel */
+    color: #3b1e1a; /* Farbe des Titels */
+    margin: 20px 0; /* Abstand oben und unten */
+    letter-spacing: 2px; /* Buchstabenabstand */
+    text-shadow: 1px 1px #d4af37; /* Schatteneffekt */
+    font-size: 2em; /* Schriftgröße */
+}
+
+h2 {
+    font-size: 1.5em; /* Schriftgröße für Untertitel */
 }
 
 /* Navigation */
 nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 20px 0;
+    list-style-type: none; /* Keine Aufzählungszeichen */
+    padding: 0; /* Kein Padding */
+    margin: 20px 0; /* Abstand oben und unten */
     display: flex;
-    flex-direction: column;
-    gap: 15px;
+    flex-direction: column; /* Vertikale Anordnung */
+    gap: 15px; /* Abstand zwischen den Elementen */
 }
 
 /* Kapitel-Links */
 nav ul li a {
-    font-weight: bold;
-    color: #3b1e1a;
-    padding: 10px 15px;
-    background-color: #e2d3ba;
-    border: 2px solid #b08934;
-    border-radius: 8px;
-    text-decoration: none;
-    transition: all 0.3s;
-    display: block;
-}
-
-nav ul li a:hover {
-    background-color: #b08934;
-    color: #f4f1e8;
-    border-color: #3b1e1a;
-}
+    font-weight: bold; /* Fettdruck */
+    color: #3b1e1a; /* Linkfarbe */
+    padding: 10px 15px; /* Innenabstand */
+    background-color: #e2d3ba; /* Hintergrundfarbe der Links */
+    border: 2px solid #b08934; /* Rahmenfarbe */
+    border-radius: 8px; /* Abgerundete Ecken */
+    text-decoration: none; /* Unterstreichung entfernen */
+    transition:
