@@ -41,6 +41,10 @@ nav ul {
     gap: 15px; /* Abstand zwischen den Elementen */
 }
 
+nav li {
+    margin-bottom: 15px;
+}
+
 /* Kapitel-Links */
 nav ul li a {
     font-weight: bold; /* Fettdruck */
