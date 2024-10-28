@@ -7,10 +7,30 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+	<div class="fog"></div>
+	<div class="content">
     <h1>Kapitel 1: Was ist passives Investieren?</h1>
     <div class="box">
         <p>In der Welt der Muggel gibt es viele Arten, sein Gold anzulegen. Manche, die „Aktive Anleger“ genannt werden, jagen nach schnellem Gewinn, als wären sie auf der Suche nach dem legendären Stein der Weisen. Doch beim passiven Investieren geht es darum, eine Strategie zu wählen, die langfristig funktioniert und nicht ständig Aufmerksamkeit erfordert – fast so, als hätte man einen Hauselfen für die Finanzen.</p>
     </div>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/dMfo4FEu6XY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <a href="chapter2.html">Weiter zu Kapitel 2</a>
+	</div>
+	
+	<!-- Kerzen hinzufügen -->
+<script>
+    const numCandles = 50;
+    const body = document.body;
+
+    for (let i = 0; i < numCandles; i++) {
+        const candle = document.createElement('div');
+        candle.className = 'candle';
+        candle.style.top = Math.random() * 100 + '%';
+        candle.style.left = Math.random() * 100 + '%';
+        candle.style.animationDuration = (Math.random() * 3 + 2) + 's'; // Zufällige Animationsdauer
+        body.appendChild(candle);
+    }
+</script>
+
 </body>
 </html>
