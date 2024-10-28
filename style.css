@@ -1,58 +1,107 @@
-/* Allgemeines Styling */
+/* Basis für den Seitenhintergrund */
 body, html {
-    font-family: "Garamond", serif; /* Schriftart für Harry Potter Stil */
-    background-color: #f4f1e8; /* Hintergrundfarbe */
-    color: #4a2f1d; /* Textfarbe */
     margin: 0;
     padding: 0;
+    font-family: "Garamond", serif;
+    color: #e0d9c6;
+    min-height: 100vh;
+    overflow: hidden;
+    background-color: #0b0e3d;
     display: flex;
-    justify-content: center; /* Zentrierung horizontal */
-    align-items: center; /* Zentrierung vertikal */
-    min-height: 100vh; /* Höhe des Viewports */
+    align-items: center;
+    justify-content: center;
+}
+/* Nebel hinzufügen */
+@keyframes fogAnimation {
+    0% { opacity: 0.2; }
+    100% { opacity: 0.5; }
 }
 
-/* Hauptinhalt in der Mitte zentrieren */
+.fog {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.1);
+    opacity: 0.5;
+    animation: fogAnimation 6s infinite alternate;
+    z-index: 0;
+}
+
+/* Kerzen erstellen */
+@keyframes candleFlicker {
+    0%, 100% { opacity: 0.9; transform: translateY(-2px); }
+    50% { opacity: 1; transform: translateY(2px); }
+}
+
+.candle {
+    position: absolute;
+    width: 10px;
+    height: 30px;
+    background-color: #FFD700;
+    box-shadow: 0 0 10px #FFD700, 0 0 20px rgba(255, 215, 0, 0.8);
+    border-radius: 2px;
+    animation: candleFlicker 3s infinite;
+    opacity: 0.8;
+}
+
+/* Mehrere Kerzen positionieren */
+.candle:nth-child(1) { top: 20%; left: 15%; animation-duration: 3.5s; }
+.candle:nth-child(2) { top: 30%; left: 40%; animation-duration: 4s; }
+.candle:nth-child(3) { top: 25%; left: 70%; animation-duration: 3s; }
+.candle:nth-child(4) { top: 45%; left: 20%; animation-duration: 3.7s; }
+.candle:nth-child(5) { top: 35%; left: 55%; animation-duration: 3.2s; }
+/* Weitere Kerzen hinzufügen, um die Decke magischer erscheinen zu lassen */
+
 .content {
-    text-align: center; /* Text zentriert */
-    max-width: 90%; /* Maximale Breite */
-    margin: 20px auto; /* Automatischer Abstand oben und unten */
+    text-align: center;
+    background-color: rgba(20, 20, 40, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    max-width: 600px;
+    z-index: 1;
+    margin: 0 20px;
 }
 
 h1 {
-    font-family: "Georgia", serif; /* Schriftart für den Titel */
-    color: #3b1e1a; /* Farbe des Titels */
-    margin: 20px 0; /* Abstand oben und unten */
-    letter-spacing: 2px; /* Buchstabenabstand */
-    text-shadow: 1px 1px #d4af37; /* Schatteneffekt */
-    font-size: 2em; /* Schriftgröße */
+    color: #f5e8d0;
+    font-size: 2em;
+    text-shadow: 0px 0px 8px rgba(255, 215, 0, 0.8);
+}
+p{
+	font-size:25px;
 }
 
-h2 {
-    font-size: 1.5em; /* Schriftgröße für Untertitel */
+a{
+	color: #c2b280;
 }
-
-/* Navigation */
 nav ul {
-    list-style-type: none; /* Keine Aufzählungszeichen */
-    padding: 0; /* Kein Padding */
-    margin: 20px 0; /* Abstand oben und unten */
+    list-style-type: none;
+    padding: 0;
     display: flex;
-    flex-direction: column; /* Vertikale Anordnung */
-    gap: 15px; /* Abstand zwischen den Elementen */
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+	font-size:20px;
 }
 
-nav li {
-    margin-bottom: 15px;
-}
-
-/* Kapitel-Links */
 nav ul li a {
-    font-weight: bold; /* Fettdruck */
-    color: #3b1e1a; /* Linkfarbe */
-    padding: 10px 15px; /* Innenabstand */
-    background-color: #e2d3ba; /* Hintergrundfarbe der Links */
-    border: 2px solid #b08934; /* Rahmenfarbe */
-    border-radius: 8px; /* Abgerundete Ecken */
-    text-decoration: none; /* Unterstreichung entfernen */
-    transition:
+    color: #e0d9c6;
+    padding: 10px 20px;
+    background-color: rgba(42, 42, 72, 0.8);
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.3s;
+    text-align: center;
+}
+
+nav ul li a:hover {
+    background-color: #52458b;
+    color: #f5e8d0;
+}
+
+li{
+	margin-bottom:15px;
 }
