@@ -7,9 +7,10 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+	<div class="fog"></div>
     <div class="content">
         <h1>Investing Guide für Muggel</h1>
-        <p>Willkommen in der magischen Welt des passiven Investierens! Klicke auf die Kapitel, um mehr zu erfahren.</p>
+        <p>Willkommen in der magischen Welt des passiven Investierens! Klicke auf die Kapitel, um mehr zu erfahren.</p></br></br>
         <nav>
             <ul>
                 <li><a href="chapter1.html">Kapitel 1: Was ist passives Investieren?</a></li>
@@ -23,4 +24,17 @@
         </nav>
     </div>
 </body>
+<script>
+    const numCandles = 50;
+    const body = document.body;
+
+    for (let i = 0; i < numCandles; i++) {
+        const candle = document.createElement('div');
+        candle.className = 'candle';
+        candle.style.top = Math.random() * 100 + '%';
+        candle.style.left = Math.random() * 100 + '%';
+        candle.style.animationDuration = (Math.random() * 3 + 2) + 's'; // Zufällige Animationsdauer
+        body.appendChild(candle);
+    }
+</script>
 </html>

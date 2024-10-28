@@ -5,12 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kapitel 2: Warum passives Investieren?</title>
     <link rel="stylesheet" href="style.css">
-</head>
+</head
 <body>
+	<div class="fog"></div>
+	<div class="content">
     <h1>Kapitel 2: Warum passives Investieren?</h1>
     <div class="box">
         <p>Passive Investitionen wachsen mit der Zeit. Stell dir vor, du hast einen kleinen Tropf, der stetig Gold in deine Schatztruhe fließen lässt – ohne dass du groß eingreifen musst. Die Magie liegt in der Zeit und der Macht des Zinseszinses, die deine Schätze wachsen lässt.</p>
     </div>
     <a href="chapter3.html">Weiter zu Kapitel 3</a>
+	</div>
 </body>
+
+	<!-- Kerzen hinzufügen -->
+<script>
+    const numCandles = 50;
+    const body = document.body;
+
+    for (let i = 0; i < numCandles; i++) {
+        const candle = document.createElement('div');
+        candle.className = 'candle';
+        candle.style.top = Math.random() * 100 + '%';
+        candle.style.left = Math.random() * 100 + '%';
+        candle.style.animationDuration = (Math.random() * 3 + 2) + 's'; // Zufällige Animationsdauer
+        body.appendChild(candle);
+    }
+</script>
 </html>

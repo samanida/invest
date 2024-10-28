@@ -7,14 +7,30 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+	<div class="fog"></div>
+	<div class="content">
     <h1>Kapitel 6: Nützliche Ressourcen</h1>
     <div class="box">
         <p>Hier findest du nützliche Links und Ressourcen, um tiefer in die Welt des passiven Investierens einzutauchen. Lass dich von Experten führen und lerne aus bewährten Quellen.</p>
-        <div class="qr-code">
-            <!-- Beispiel QR-Code. Lade hier die echten QR-Codes für deine Links hoch -->
-            <img src="https://via.placeholder.com/120" alt="QR-Code zu Ressourcen">
-        </div>
+     <ul class="bullet">
+			<li> <a href="https://www.youtube.com/channel/UCeARcCUiZg79SQQ-2_XNlXQ">Finanzfluss</a>: Sehr guter YouTube-Kanal für Einsteiger ins passive Investieren. </li>
+			<li> <a href="https://www.justetf.com/ch/">JustETF</a>: Eine Plattform für den Vergleich von ETFs. </li>
+			<li> Bogleheads Forum: Eine internationale Community, die sich dem passiven Investieren verschrieben hat. </li>
     </div>
-    <a href="index.html">Zurück zur Übersicht</a>
+    <a href="chapter7.html">Weiter zu Kapitel 7</a>
+	</div>
 </body>
+<script>
+    const numCandles = 50;
+    const body = document.body;
+
+    for (let i = 0; i < numCandles; i++) {
+        const candle = document.createElement('div');
+        candle.className = 'candle';
+        candle.style.top = Math.random() * 100 + '%';
+        candle.style.left = Math.random() * 100 + '%';
+        candle.style.animationDuration = (Math.random() * 3 + 2) + 's'; // Zufällige Animationsdauer
+        body.appendChild(candle);
+    }
+</script>
 </html>

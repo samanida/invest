@@ -6,11 +6,31 @@
     <title>Kapitel 3: Wichtige Konzepte</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+<div class="fog"></div>
+<div class="content">
     <h1>Kapitel 3: Wichtige Konzepte</h1>
     <div class="box">
         <p>Bevor du auf die Reise gehst, ist es wichtig, ein paar Zaubersprüche – oder besser gesagt, Begriffe – zu kennen. Der „Zinseszins“ und das Konzept der „Diversifikation“ sind mächtige Werkzeuge, die verhindern, dass ein einziger Fluch deine Ersparnisse vernichtet.</p>
     </div>
+	<iframe width="100%" height="315" src="https://www.youtube.com/embed/0EV6PvA7Cuc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
     <a href="chapter4.html">Weiter zu Kapitel 4</a>
+</div>
 </body>
+	<!-- Kerzen hinzufügen -->
+<script>
+    const numCandles = 50;
+    const body = document.body;
+
+    for (let i = 0; i < numCandles; i++) {
+        const candle = document.createElement('div');
+        candle.className = 'candle';
+        candle.style.top = Math.random() * 100 + '%';
+        candle.style.left = Math.random() * 100 + '%';
+        candle.style.animationDuration = (Math.random() * 3 + 2) + 's'; // Zufällige Animationsdauer
+        body.appendChild(candle);
+    }
+</script>
 </html>

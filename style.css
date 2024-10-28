@@ -11,6 +11,7 @@ body, html {
     align-items: center;
     justify-content: center;
 }
+
 /* Nebel hinzufügen */
 @keyframes fogAnimation {
     0% { opacity: 0.2; }
@@ -52,6 +53,7 @@ body, html {
 .candle:nth-child(3) { top: 25%; left: 70%; animation-duration: 3s; }
 .candle:nth-child(4) { top: 45%; left: 20%; animation-duration: 3.7s; }
 .candle:nth-child(5) { top: 35%; left: 55%; animation-duration: 3.2s; }
+
 /* Weitere Kerzen hinzufügen, um die Decke magischer erscheinen zu lassen */
 
 .content {
@@ -60,9 +62,10 @@ body, html {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
-    max-width: 600px;
+    max-width: 90%; /* Maximale Breite anpassen */
+    width: 600px;   /* Breite für größere Bildschirme */
     z-index: 1;
-    margin: 0 20px;
+    margin: 0 auto; /* Zentriert den Inhalt */
 }
 
 h1 {
@@ -70,13 +73,15 @@ h1 {
     font-size: 2em;
     text-shadow: 0px 0px 8px rgba(255, 215, 0, 0.8);
 }
-p{
-	font-size:25px;
+
+p {
+    font-size: 25px;
 }
 
-a{
-	color: #c2b280;
+a {
+    color: #c2b280;
 }
+
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -84,7 +89,7 @@ nav ul {
     flex-direction: column;
     align-items: center;
     gap: 15px;
-	font-size:20px;
+    font-size: 20px;
 }
 
 nav ul li a {
@@ -102,6 +107,41 @@ nav ul li a:hover {
     color: #f5e8d0;
 }
 
+.bullet li {
+    margin-bottom: 15px;
+    list-style-type: none;
+}
+
 li{
 	margin-bottom:15px;
+}
+
+/* Responsive Anpassungen */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5em; /* Kleinere Schriftgröße für mobile Geräte */
+    }
+
+    .content {
+        padding: 15px; /* Weniger Padding auf kleineren Bildschirmen */
+    }
+
+    nav ul li a {
+        padding: 8px 15px; /* Weniger Padding auf kleineren Bildschirmen */
+        font-size: 18px; /* Kleinere Schriftgröße für mobile Geräte */
+    }
+
+    p {
+        font-size: 20px; /* Kleinere Schriftgröße für mobile Geräte */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.2em; /* Noch kleinere Schriftgröße für sehr kleine Bildschirme */
+    }
+
+    p {
+        font-size: 18px; /* Noch kleinere Schriftgröße für sehr kleine Bildschirme */
+    }
 }

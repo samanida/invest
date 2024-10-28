@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kapitel 7: Dein Weg zum Glück</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="fog"></div>
+	<div class="content">
+    <h1>Kapitel 7: Dein Weg zum Glück</h1>
+    <div class="box">
+        <p>So, jetzt solltest du bereit sein dein Gringots Verlies von einem Weasly leeren zu einem der Malfoy würdigen hochzuarbeiten. Gehe dafür wiefolgt vor:</p>
+        <ul class="bullet">
+			<li> 1. Wähle deinen passenden Fonds aus </li>
+			<li> 2. Eröffne mit diesem Link dein Depot, damit du mit dem investieren beginnen kannst </li>
+			<li> 3. Teile deiner lieblings Hexe mit, wie die Informationen deines neu eröffneten Kontos sind </li>
+			<li> 4. Danach wird dir die Hexe die Start Galleonen überweisen, damit du voll loslegen kannst </li>
+    </div>
+    <a href="index.html">Zurück zur Übersicht</a>
+	</div>
+</body>
+<script>
+    const numCandles = 50;
+    const body = document.body;
+
+    for (let i = 0; i < numCandles; i++) {
+        const candle = document.createElement('div');
+        candle.className = 'candle';
+        candle.style.top = Math.random() * 100 + '%';
+        candle.style.left = Math.random() * 100 + '%';
+        candle.style.animationDuration = (Math.random() * 3 + 2) + 's'; // Zufällige Animationsdauer
+        body.appendChild(candle);
+    }
+</script>
+</html>
