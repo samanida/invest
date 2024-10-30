@@ -63,7 +63,7 @@ body, html {
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
     max-width: 90%; /* Maximale Breite anpassen */
-    width: 600px;   /* Breite für größere Bildschirme */
+    width: 900px;   /* Breite für größere Bildschirme */
     z-index: 1;
     margin: 0 auto; /* Zentriert den Inhalt */
 }
