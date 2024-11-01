@@ -96,7 +96,7 @@ nav ul {
     gap: 15px;
     font-size: 20px;
     text-align: justify; /* Blockformat */
-    max-width: 600px; /* Optional, um die Breite zu begrenzen */
+    
 }
 
 nav ul li a {
@@ -118,7 +118,6 @@ nav ul li a:hover {
     margin-bottom: 15px;
     list-style-type: none;
     text-align: justify; /* Blockformat */
-    max-width: 600px; /* Optional, um die Breite zu begrenzen */
 }
 
 li {
