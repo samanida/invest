@@ -114,10 +114,11 @@ nav ul li a:hover {
     color: #f5e8d0;
 }
 .etc li{
-    list-style-type: none;
     margin-bottom: 15px;
-    text-align: center; /* Blockformat */
+    list-style-type: none;
+    text-align: center; 
 }
+
 .bullet li {
     margin-bottom: 15px;
     list-style-type: none;
