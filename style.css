@@ -64,7 +64,7 @@ body, html {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
     max-width: 90%; /* Maximale Breite anpassen */
     z-index: 1;
-    width:1000px;
+    width: 1000px;
     margin: 0 auto; /* Zentriert den Inhalt */
 }
 
@@ -73,9 +73,11 @@ h1 {
     font-size: 2em;
     text-shadow: 0px 0px 8px rgba(255, 215, 0, 0.8);
 }
-i{
-	font-size:25px;
+
+i {
+    font-size: 25px;
 }
+
 p {
     font-size: 25px;
 }
@@ -84,6 +86,7 @@ a {
     color: #c2b280;
 }
 
+/* Listen im Blockformat ausrichten */
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -92,6 +95,8 @@ nav ul {
     align-items: center;
     gap: 15px;
     font-size: 20px;
+    text-align: justify; /* Blockformat */
+    max-width: 600px; /* Optional, um die Breite zu begrenzen */
 }
 
 nav ul li a {
@@ -112,11 +117,13 @@ nav ul li a:hover {
 .bullet li {
     margin-bottom: 15px;
     list-style-type: none;
+    text-align: justify; /* Blockformat */
+    max-width: 600px; /* Optional, um die Breite zu begrenzen */
 }
 
-li{
-	margin-bottom:15px;
-	font-size: 20px;
+li {
+    margin-bottom: 15px;
+    font-size: 20px;
 }
 
 /* Responsive Anpassungen */
